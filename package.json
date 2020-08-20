@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "dev:server": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules --poll src/server.ts",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+    "dev:server": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts --poll",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js --poll"
   },
   "dependencies": {
     "@types/bcryptjs": "^2.4.2",
