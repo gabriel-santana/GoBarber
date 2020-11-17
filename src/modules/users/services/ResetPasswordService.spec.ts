@@ -61,7 +61,7 @@ describe('ResetPasswordService', () => {
 
     await expect(
       resetPassword.execute({
-        token: 'non-existing-token',
+        token,
         password: '123456',
       }),
     ).rejects.toBeInstanceOf(AppError);
